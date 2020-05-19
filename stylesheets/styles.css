@@ -1,0 +1,246 @@
+/* your css here */
+@media print {
+	.ad, nav, footer {
+		display: none;
+    }
+    h2 {
+        break-after: avoid-page;
+        text-align: center;
+        
+    }
+    li {
+        break-inside: avoid-page;
+    }
+    a[href^="http"]::after {
+		content: "(" attr(href) ")";
+    }
+    img {
+        border: 1px solid black;
+        border-radius: 1vw;
+        display: inline-block;
+        width: 80%;
+      
+      }
+      
+      
+      figcaption {
+          text-align: center;
+          padding-top: 2vw;
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          font-size: small;
+      }
+      
+      h1 {
+          padding: 2vw 2vw 2vw 2vw;
+          text-align: center;
+          
+      }
+      
+      .navigation {
+          background-color: beige;
+          height: 3vw;
+          width: 100%;
+          margin-top: 3vw;
+          margin-bottom: 3vw;
+      }
+      
+      .navigation ul{
+          padding: 0vw;
+          margin: 0vw;
+          text-align:center;
+      }
+      
+      .navigation li{
+          text-align: center;
+          border: 3px solid black;
+          margin: 1vw 3vw 1vw 1vw;
+          display: inline-block;
+      
+      }
+      
+      p {
+          text-align: justify;
+          font-size: large;
+          line-height: 2;
+      }
+      
+      li a {
+          display: block;
+          color: black;
+          text-align: center;
+          padding: 1vw 2vw;
+          text-decoration: none;
+      }
+      
+      
+      body {
+          background-color: beige;
+      }
+      
+      label {
+          margin: 1vw;
+          padding: 1vw;
+          display: block;
+          text-align: center;
+          font-size: large;
+      }
+      
+      input[type="submit"] {
+          text-align:center;
+          margin-inline-start: 50vw;
+      }
+      
+      .grid-container {
+          display: grid; 
+          grid-template-columns: repeat(7, 1fr); 
+          grid-auto-rows: 10vw; 
+        }
+      
+      .box1 { 
+          grid-column-start: 1; 
+          grid-column-end: 3; 
+          grid-row-start: 1; 
+          grid-row-end: 3; 
+        }
+      
+      
+      .box2 { 
+          grid-column-start: 4; 
+          grid-column-end: 6; 
+          grid-row-start: 1; 
+          grid-row-end: 3;
+        }
+    
+}
+
+@media screen {
+img {
+    border: 1px solid black;
+    border-radius: 1vw;
+    display: inline-block;
+    width: 80%;
+  
+  }
+  
+  
+  figcaption {
+      text-align: center;
+      padding-top: 2vw;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: small;
+  }
+  
+  h1 {
+    font: 300 400%/.9, serif;
+    text-align:center;
+    font-weight:800;
+    padding: 2vw 2vw 2vw 2vw;
+    margin: 2vw 2vw 2vw 2vw;
+  }
+
+  h1 div:nth-child(1) {
+    font-size: 2.3vw;
+    line-height: 1.5;
+    }
+
+    h1 div:nth-child(2) {
+    font-size: 1.5vw;
+    line-height: 1.5;
+    }
+
+  
+  h2 {
+      text-align: center;
+      font-family: serif;
+      font-size: 1.5vw;
+
+  }
+  
+  .navigation {
+      background-color: beige;
+      height: 3vw;
+      width: 100%;
+      margin-top: 3vw;
+      margin-bottom: 3vw;
+  }
+  
+  .navigation ul{
+      padding: 0vw;
+      margin: 0vw;
+      text-align:center;
+  }
+  
+  .navigation li{
+      text-align: center;
+      border: 3px solid black;
+      margin: 1vw 3vw 1vw 1vw;
+      display: inline-block;
+  
+  }
+  
+  p {
+      text-align: justify;
+      font-size: large;
+      line-height: 2;
+      font-family: sans-serif;
+      max-width: 30em;
+  }
+
+  li {
+      line-height: 2;
+  }
+  
+  li a {
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 1vw 2vw;
+      text-decoration: none;
+      font-family: serif;
+      font-weight:500;
+      font-size: 1vw;
+  }
+  
+  li a:hover {
+      background-color: black;
+      color: white
+  }
+  
+  body {
+      background-color: beige;
+  }
+  
+  label {
+      margin: 1vw;
+      padding: 1vw;
+      display: block;
+      text-align: center;
+      font-size: large;
+  }
+  
+  input[type="submit"] {
+      text-align:center;
+      margin-inline-start: 50vw;
+  }
+  
+  .grid-container {
+      display: grid; 
+      grid-template-columns: repeat(7, 1fr); 
+      grid-auto-rows: 10vw; 
+    }
+  
+  .box1 { 
+      grid-column-start: 1; 
+      grid-column-end: 3; 
+      grid-row-start: 1; 
+      grid-row-end: 3; 
+    }
+  
+  
+  .box2 { 
+      grid-column-start: 4; 
+      grid-column-end: 6; 
+      grid-row-start: 1; 
+      grid-row-end: 3;
+    }
+}
